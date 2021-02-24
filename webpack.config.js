@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
-      title: "breakout game feat. rxjs",
+      title: "flappy bird game feat. rxjs",
     }),
   ],
   devtool: "inline-source-map",
