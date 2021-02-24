@@ -4,11 +4,14 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: { index: "./src/index.ts", print: "./src/print.ts" },
+  entry: {
+    index: "./src/index.ts",
+    // print: "./src/print.ts",
+  },
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
-      title: "Webpack TS Starter With SASS",
+      title: "breakout game feat. rxjs",
     }),
   ],
   devtool: "inline-source-map",
